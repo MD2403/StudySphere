@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Login = () => (
     <div className= 'h-screen bg-cover bg-no-repeat bg-center bg-fixed'
     style={{backgroundImage: `url('https://images.unsplash.com/photo-1432821596592-e2c18b78144f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`}}>
-    <div className="max-w-lg m-auto pt-44">
+    <div className="max-w-lg m-auto pt-44 font-myfont">
         <div
             className="bg-white/ backdrop-blur-xl rounded-lg shadow-xl overflow-hidden"
             
@@ -21,7 +21,7 @@ const Login = () => (
                             <input
                                 placeholder="Email address"
                                 className="appearance-none relative block w-full px-3 py-3 border border-gray-700 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-indigo-500focus:border-indigo-500 focus:z-10 sm:text-sm"
-                                required=""
+                                required="true"
                                 autoComplete="email"
                                 type="email"
                                 name="email"
@@ -32,7 +32,7 @@ const Login = () => (
                             <input
                                 placeholder="Password"
                                 className="appearance-none relative block w-full px-3 py-3 border border-gray-700 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                                required=""
+                                required="true"
                                 autoComplete="current-password"
                                 type="password"
                                 name="password"

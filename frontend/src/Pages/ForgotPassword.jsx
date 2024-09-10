@@ -1,16 +1,28 @@
-import {} from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const ForgetPassword = () => (
+const ForgetPassword = () => {
+    const [newPasswordVisible, setNewPasswordVisible] = useState(false)
+    const [confirmPasswordVisible, setConfirmPasswordVisible] = useState(false)
+
+    const toggleNewPasswordVisible = () => {
+        setConfirmPasswordVisible(!newPasswordVisible)
+    }
+
+    const toggleConfirmPasswordVisible = () => {
+        setConfirmPasswordVisible(!confirmPasswordVisible)
+
+    }
+    return (
     <div className= 'h-screen bg-cover bg-no-repeat bg-center bg-fixed'
     style={{backgroundImage: `url('https://images.unsplash.com/photo-1432821596592-e2c18b78144f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`}}>
-    <div className="max-w-lg m-auto pt-44">
+    <div className="max-w-lg m-auto pt-44 font-myfont">
         <div
             className="bg-white/ backdrop-blur-xl rounded-lg shadow-xl overflow-hidden"
             
         >
             <div className="p-8">
-                <h2 className="text-center text-3xl font-extrabold text-black">
+                <h2 className="text-center text-3xl font-extrabold text-black ">
                     Reset Your Password
                 </h2>
                 <p className="mt-4 text-center text-gray-700">Be Creative. Set a password that is easy to remember and hard to guess</p>
@@ -29,7 +41,7 @@ const ForgetPassword = () => (
                         <div className="mt-4">
                             {/* <label className="sr-only" htmlFor="password">Re Enter New Password</label> */}
                             <input
-                                placeholder="Re Enter New Password"
+                                placeholder="Confirm Password"
                                 className="appearance-none relative block w-full px-3 py-3 border border-gray-700 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                                 required="true"
                                 type="password"
@@ -57,7 +69,7 @@ const ForgetPassword = () => (
         </div>
     </div>
     </div>
-
-);
+    )
+};
 
 export default ForgetPassword;

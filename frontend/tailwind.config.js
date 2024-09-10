@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        myfont: ['Josefin Sans', 'sans-serif'],
+        myfont: ['Dosis', 'sans-serif'],
       },
       boxShadow: {
         custom: '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);',
@@ -21,6 +21,9 @@ export default {
       transitionDuration: {
         'custom': '600ms',
       },
+      backgroundImage: theme => ({
+      'gradient-hover': 'linear-gradient(90deg, #ffffff, #018fd6)',
+      }),
     },
   },
   plugins: [],
