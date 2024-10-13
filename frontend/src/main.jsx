@@ -5,7 +5,6 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import Login from './Pages/Login.jsx';
 import SignUp from './Pages/SignUp.jsx';
 import ForgetPassword from './Pages/ForgotPassword.jsx';
-import Dashboard from './components/Dashboard.jsx';
 import Home from './components/Home.jsx';
 import Groups from './components/Groups.jsx';
 import Schedule from './components/Schedule.jsx';
@@ -23,11 +22,10 @@ const router = createBrowserRouter(createRoutesFromElements(
   <>
     {/* Redirect root path to Dashboard */}
     <Route element={<Layout />}>
-      <Route path="/" element={<Dashboard />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/forgot-password" element={<ForgetPassword />} />
-      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/groups" element={<Groups />} />
       <Route path="/schedule" element={<Schedule />} />
       <Route path="/chats" element={<Chats />} />

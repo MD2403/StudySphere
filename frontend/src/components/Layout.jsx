@@ -14,7 +14,7 @@ import Logo from '../assets/Logos/StudySphere_logo.png'; // Make sure the path i
 import { useMediaQuery, useTheme } from '@mui/material';
 
 const sidebarItems = [
-  { text: 'Home', icon: <HomeIcon />, link: '/home' },
+  { text: 'Home', icon: <HomeIcon />, link: '/' },
   { text: 'Groups', icon: <GroupIcon />, link: '/groups' },
   { text: 'Schedule', icon: <ScheduleIcon />, link: '/schedule' },
   { text: 'Chats', icon: <ChatIcon />, link: '/chats' },
