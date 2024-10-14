@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, Link, useLocation } from 'react-router-dom';
 import { AppBar, Toolbar, IconButton, Typography, Avatar, Button, List, ListItem, ListItemIcon, Drawer, Box } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
@@ -14,7 +14,7 @@ import Logo from '../assets/Logos/StudySphere_logo.png'; // Make sure the path i
 import { useMediaQuery, useTheme } from '@mui/material';
 
 const sidebarItems = [
-  { text: 'Home', icon: <HomeIcon />, link: '/' },
+  { text: 'Home', icon: <HomeIcon />, link: '/home' },
   { text: 'Groups', icon: <GroupIcon />, link: '/groups' },
   { text: 'Schedule', icon: <ScheduleIcon />, link: '/schedule' },
   { text: 'Chats', icon: <ChatIcon />, link: '/chats' },
@@ -28,6 +28,7 @@ function Layout() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('md')); // Detect screen sizes below 'md' breakpoint
+  const location = useLocation(); // Get the current path
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -73,20 +74,29 @@ function Layout() {
         }}
       >
         {/* Header */}
-        <AppBar position="static" color="transparent" elevation={0}>
-          <Toolbar>
-            {isSmallScreen && (
-              <IconButton edge="start" color="inherit" onClick={toggleSidebar} aria-label="menu">
-                <MenuIcon />
-              </IconButton>
-            )}
-            <Typography variant="h6" sx={{ flexGrow: 1 }}>
-              StudySphere
-            </Typography>
-            <Avatar src="https://via.placeholder.com/40" alt="Profile" />
-            <Button variant="contained" sx={{ marginLeft: 2 }}>Edit Profile</Button>
-          </Toolbar>
-        </AppBar>
+        {location.pathname === '/' && ( // Header is visible only on Home page
+          <AppBar position="static" color="transparent" elevation={0}>
+            <Toolbar>
+              {isSmallScreen && (
+                <IconButton edge="start" color="inherit" onClick={toggleSidebar} aria-label="menu">
+                  <MenuIcon />
+                </IconButton>
+              )}
+              <Typography variant="h6" sx={{ flexGrow: 1 }}>
+                StudySphere
+              </Typography>
+              <Avatar src="https://via.placeholder.com/40" alt="Profile" />
+              <Button 
+                variant="contained" 
+                sx={{ marginLeft: 2 }} 
+                component={Link} 
+                to="/edit-profile" // Link to the edit profile page
+              >
+                Edit Profile
+              </Button>
+            </Toolbar>
+          </AppBar>
+        )}
 
         {/* Content from each page */}
         <Outlet />
