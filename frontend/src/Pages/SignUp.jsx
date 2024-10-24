@@ -12,7 +12,7 @@ const SignUp = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:4000/api/users/register', { username, email, password });
+            const response = await axios.post('study-sphere-psi.vercel.app/api/users/register', { username, email, password });
             if (response.status === 201) {
                 navigate('/login');
             }
