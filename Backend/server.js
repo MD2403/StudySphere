@@ -28,6 +28,10 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // Routes
+app.use("/",(req,res)=>{
+    console.log("Welcome to the server");
+    res.send("Hello")
+})
 app.use('/api/users', userRouter);
 app.use('/api/chats', chatRouter); // Chat Route
 app.use('/api/messages', messageRouter); // Message Route
