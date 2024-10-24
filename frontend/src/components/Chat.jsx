@@ -17,7 +17,7 @@
 // import axios from 'axios';
 
 // // Connect to the backend server
-// const socket = io('http://localhost:4000'); // Change to your backend URL
+// const socket = io('study-sphere-psi.vercel.app'); // Change to your backend URL
 
 // function Chats() {
 //   const [chats, setChats] = useState([]);
@@ -31,7 +31,7 @@
 //   useEffect(() => {
 //     const fetchChats = async () => {
 //       try {
-//         const response = await axios.get('http://localhost:4000/api/chats/my-chats', {
+//         const response = await axios.get('study-sphere-psi.vercel.app/api/chats/my-chats', {
 //           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
 //         });
 //         setChats(response.data);
@@ -48,7 +48,7 @@
   //   setSelectedChat(chat);
 
   //   try {
-  //     const response = await axios.get(`http://localhost:4000/api/chats/${chat._id}/messages`, {
+  //     const response = await axios.get(`study-sphere-psi.vercel.app/api/chats/${chat._id}/messages`, {
   //       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
   //     });
   //     setMessages(response.data);
@@ -67,7 +67,7 @@
 //       };
 
 //       axios
-//         .post('http://localhost:4000/api/messages', newMessage, {
+//         .post('study-sphere-psi.vercel.app/api/messages', newMessage, {
 //           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
 //         })
 //         .then((response) => {
@@ -106,7 +106,7 @@
 
   //   try {
   //     const response = await axios.get(
-  //       `http://localhost:4000/api/users/search?q=${term}`,
+  //       `study-sphere-psi.vercel.app/api/users/search?q=${term}`,
   //       {
   //         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }, // Use correct token name
   //       }
@@ -231,7 +231,7 @@
 // import axios from 'axios';
 
 // // Connect to the backend server
-// const socket = io('http://localhost:4000'); // Change to your backend URL
+// const socket = io('study-sphere-psi.vercel.app'); // Change to your backend URL
 
 // function Chats() {
 //   const [chats, setChats] = useState([]);
@@ -245,7 +245,7 @@
 //   useEffect(() => {
 //     const fetchChats = async () => {
 //       try {
-//         const response = await axios.get('http://localhost:4000/api/chats/my-chats', {
+//         const response = await axios.get('study-sphere-psi.vercel.app/api/chats/my-chats', {
 //           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //         });
 //         setChats(response.data);
@@ -263,7 +263,7 @@
 
 //     try {
 //       // Fetch the messages for the selected chat
-//       const response = await axios.get(`http://localhost:4000/api/chats/${chat._id}/messages`, {
+//       const response = await axios.get(`study-sphere-psi.vercel.app/api/chats/${chat._id}/messages`, {
 //         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //       });
 //       setMessages(response.data); // Update the messages state with fetched messages
@@ -284,7 +284,7 @@
 //       };
 
 //       axios
-//         .post('http://localhost:4000/api/messages', newMessage, {
+//         .post('study-sphere-psi.vercel.app/api/messages', newMessage, {
 //           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //         })
 //         .then((response) => {
@@ -316,7 +316,7 @@
 //     try {
 //       // Make API call to create or fetch a chat with the selected user
 //       const response = await axios.post(
-//         'http://localhost:4000/api/chats/one-on-one', 
+//         'study-sphere-psi.vercel.app/api/chats/one-on-one', 
 //         { userId: user._id }, // Pass the user ID to create/fetch the chat
 //         {
 //           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
@@ -327,7 +327,7 @@
 //       setSelectedChat(chat); // Set the chat as the selected chat
   
 //       // Fetch the messages for the newly created or fetched chat
-//       const messagesResponse = await axios.get(`http://localhost:4000/api/chats/${chat._id}/messages`, {
+//       const messagesResponse = await axios.get(`study-sphere-psi.vercel.app/api/chats/${chat._id}/messages`, {
 //         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //       });
 //       setMessages(messagesResponse.data); // Display the messages
@@ -352,7 +352,7 @@
 
 //   //   try {
 //   //     const response = await axios.get(
-//   //       `http://localhost:4000/api/users/search?q=${term}`,
+//   //       `study-sphere-psi.vercel.app/api/users/search?q=${term}`,
 //   //       {
 //   //         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }, // Ensure correct token
 //   //       }
@@ -375,7 +375,7 @@
   
 //       try {
 //         const response = await axios.get(
-//           `http://localhost:4000/api/users/search?q=${term}`,
+//           `study-sphere-psi.vercel.app/api/users/search?q=${term}`,
 //           {
 //             headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }, // Use correct token name
 //           }
@@ -497,7 +497,7 @@
 // import axios from 'axios';
 
 // // Connect to the backend server
-// const socket = io('http://localhost:4000'); // Change to your backend URL
+// const socket = io('study-sphere-psi.vercel.app'); // Change to your backend URL
 
 // function Chats() {
 //   const [chats, setChats] = useState([]);
@@ -514,7 +514,7 @@
 //   useEffect(() => {
 //     const fetchChats = async () => {
 //       try {
-//         const response = await axios.get('http://localhost:4000/api/chats/my-chats', {
+//         const response = await axios.get('study-sphere-psi.vercel.app/api/chats/my-chats', {
 //           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //         });
 //         setChats(response.data);
@@ -532,7 +532,7 @@
 
 //     try {
 //       // Fetch the messages for the selected chat
-//       const response = await axios.get(`http://localhost:4000/api/chats/${chat._id}/messages`, {
+//       const response = await axios.get(`study-sphere-psi.vercel.app/api/chats/${chat._id}/messages`, {
 //         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //       });
 //       setMessages(response.data); // Update the messages state with fetched messages
@@ -553,7 +553,7 @@
 //       };
 
 //       axios
-//         .post('http://localhost:4000/api/messages', newMessage, {
+//         .post('study-sphere-psi.vercel.app/api/messages', newMessage, {
 //           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //         })
 //         .then((response) => {
@@ -585,7 +585,7 @@
 //     try {
 //       // Make API call to create or fetch a chat with the selected user
 //       const response = await axios.post(
-//         'http://localhost:4000/api/chats/one-on-one',
+//         'study-sphere-psi.vercel.app/api/chats/one-on-one',
 //         { userId: user._id }, // Pass the user ID to create/fetch the chat
 //         {
 //           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
@@ -596,7 +596,7 @@
 //       setSelectedChat(chat); // Set the chat as the selected chat
 
 //       // Fetch the messages for the newly created or fetched chat
-//       const messagesResponse = await axios.get(`http://localhost:4000/api/chats/${chat._id}/messages`, {
+//       const messagesResponse = await axios.get(`study-sphere-psi.vercel.app/api/chats/${chat._id}/messages`, {
 //         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //       });
 //       setMessages(messagesResponse.data); // Display the messages
@@ -620,7 +620,7 @@
 
 //     try {
 //       const response = await axios.get(
-//         `http://localhost:4000/api/users/search?q=${term}`,
+//         `study-sphere-psi.vercel.app/api/users/search?q=${term}`,
 //         {
 //           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }, // Use correct token name
 //         }
@@ -760,7 +760,7 @@
 // import axios from 'axios';
 
 // // Connect to the backend server
-// const socket = io('http://localhost:4000'); // Change to your backend URL
+// const socket = io('study-sphere-psi.vercel.app'); // Change to your backend URL
 
 // function Chats() {
 //   const [chats, setChats] = useState([]);
@@ -776,7 +776,7 @@
 //   useEffect(() => {
 //     const fetchChats = async () => {
 //       try {
-//         const response = await axios.get('http://localhost:4000/api/chats/my-chats', {
+//         const response = await axios.get('study-sphere-psi.vercel.app/api/chats/my-chats', {
 //           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //         });
 //         setChats(response.data);
@@ -791,7 +791,7 @@
 //     setSelectedChat(chat);
 
 //     try {
-//       const response = await axios.get(`http://localhost:4000/api/chats/${chat._id}/messages`, {
+//       const response = await axios.get(`study-sphere-psi.vercel.app/api/chats/${chat._id}/messages`, {
 //         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //       });
 //       setMessages(response.data);
@@ -806,7 +806,7 @@
 //       const newMessage = { content: message, chatId: selectedChat._id };
 
 //       axios
-//         .post('http://localhost:4000/api/messages', newMessage, {
+//         .post('study-sphere-psi.vercel.app/api/messages', newMessage, {
 //           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //         })
 //         .then((response) => {
@@ -832,14 +832,14 @@
 //   const handleUserSelect = async (user) => {
 //     try {
 //       const response = await axios.post(
-//         'http://localhost:4000/api/chats/one-on-one',
+//         'study-sphere-psi.vercel.app/api/chats/one-on-one',
 //         { userId: user._id },
 //         { headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` } }
 //       );
 //       const chat = response.data;
 //       setSelectedChat(chat);
 
-//       const messagesResponse = await axios.get(`http://localhost:4000/api/chats/${chat._id}/messages`, {
+//       const messagesResponse = await axios.get(`study-sphere-psi.vercel.app/api/chats/${chat._id}/messages`, {
 //         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //       });
 //       setMessages(messagesResponse.data);
@@ -859,7 +859,7 @@
 //     }
 
 //     try {
-//       const response = await axios.get(`http://localhost:4000/api/users/search?q=${term}`, {
+//       const response = await axios.get(`study-sphere-psi.vercel.app/api/users/search?q=${term}`, {
 //         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //       });
 //       setSearchResults(response.data);
@@ -994,7 +994,7 @@
 // import axios from 'axios';
 
 // // Connect to the backend server
-// const socket = io('http://localhost:4000'); // Change to your backend URL
+// const socket = io('study-sphere-psi.vercel.app'); // Change to your backend URL
 
 // function Chats() {
 //   const [chats, setChats] = useState([]);
@@ -1010,7 +1010,7 @@
 //   useEffect(() => {
 //     const fetchChats = async () => {
 //       try {
-//         const response = await axios.get('http://localhost:4000/api/chats/my-chats', {
+//         const response = await axios.get('study-sphere-psi.vercel.app/api/chats/my-chats', {
 //           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //         });
 //         setChats(response.data);
@@ -1024,7 +1024,7 @@
 //   const handleChatSelect = async (chat) => {
 //     setSelectedChat(chat);
 //     try {
-//       const response = await axios.get(`http://localhost:4000/api/chats/${chat._id}/messages`, {
+//       const response = await axios.get(`study-sphere-psi.vercel.app/api/chats/${chat._id}/messages`, {
 //         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //       });
 //       setMessages(response.data);
@@ -1039,7 +1039,7 @@
 //       const newMessage = { content: message, chatId: selectedChat._id };
 
 //       axios
-//         .post('http://localhost:4000/api/messages', newMessage, {
+//         .post('study-sphere-psi.vercel.app/api/messages', newMessage, {
 //           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //         })
 //         .then((response) => {
@@ -1065,14 +1065,14 @@
 //   const handleUserSelect = async (user) => {
 //     try {
 //       const response = await axios.post(
-//         'http://localhost:4000/api/chats/one-on-one',
+//         'study-sphere-psi.vercel.app/api/chats/one-on-one',
 //         { userId: user._id },
 //         { headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` } }
 //       );
 //       const chat = response.data;
 //       setSelectedChat(chat);
 
-//       const messagesResponse = await axios.get(`http://localhost:4000/api/chats/${chat._id}/messages`, {
+//       const messagesResponse = await axios.get(`study-sphere-psi.vercel.app/api/chats/${chat._id}/messages`, {
 //         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //       });
 //       setMessages(messagesResponse.data);
@@ -1092,7 +1092,7 @@
 //     }
 
 //     try {
-//       const response = await axios.get(`http://localhost:4000/api/users/search?q=${term}`, {
+//       const response = await axios.get(`study-sphere-psi.vercel.app/api/users/search?q=${term}`, {
 //         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //       });
 //       setSearchResults(response.data);
@@ -1233,7 +1233,7 @@
 // import axios from 'axios';
 
 // // Connect to the backend server
-// const socket = io('http://localhost:4000'); // Change to your backend URL
+// const socket = io('study-sphere-psi.vercel.app'); // Change to your backend URL
 
 // function Chats() {
 //   const [chats, setChats] = useState([]);
@@ -1249,7 +1249,7 @@
 //   useEffect(() => {
 //     const fetchChats = async () => {
 //       try {
-//         const response = await axios.get('http://localhost:4000/api/chats/my-chats', {
+//         const response = await axios.get('study-sphere-psi.vercel.app/api/chats/my-chats', {
 //           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //         });
 //         setChats(response.data);
@@ -1263,7 +1263,7 @@
 //   const handleChatSelect = async (chat) => {
 //     setSelectedChat(chat);
 //     try {
-//       const response = await axios.get(`http://localhost:4000/api/chats/${chat._id}/messages`, {
+//       const response = await axios.get(`study-sphere-psi.vercel.app/api/chats/${chat._id}/messages`, {
 //         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //       });
 //       setMessages(response.data);
@@ -1278,7 +1278,7 @@
 //       const newMessage = { content: message, chatId: selectedChat._id };
 
 //       axios
-//         .post('http://localhost:4000/api/messages', newMessage, {
+//         .post('study-sphere-psi.vercel.app/api/messages', newMessage, {
 //           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //         })
 //         .then((response) => {
@@ -1304,14 +1304,14 @@
 //   const handleUserSelect = async (user) => {
 //     try {
 //       const response = await axios.post(
-//         'http://localhost:4000/api/chats/one-on-one',
+//         'study-sphere-psi.vercel.app/api/chats/one-on-one',
 //         { userId: user._id },
 //         { headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` } }
 //       );
 //       const chat = response.data;
 //       setSelectedChat(chat);
 
-//       const messagesResponse = await axios.get(`http://localhost:4000/api/chats/${chat._id}/messages`, {
+//       const messagesResponse = await axios.get(`study-sphere-psi.vercel.app/api/chats/${chat._id}/messages`, {
 //         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //       });
 //       setMessages(messagesResponse.data);
@@ -1331,7 +1331,7 @@
 //     }
 
 //     try {
-//       const response = await axios.get(`http://localhost:4000/api/users/search?q=${term}`, {
+//       const response = await axios.get(`study-sphere-psi.vercel.app/api/users/search?q=${term}`, {
 //         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //       });
 //       setSearchResults(response.data);
@@ -1478,7 +1478,7 @@
 // import axios from 'axios';
 
 // // Connect to the backend server
-// const socket = io('http://localhost:4000'); // Change to your backend URL
+// const socket = io('study-sphere-psi.vercel.app'); // Change to your backend URL
 
 // function Chats() {
 //   const [chats, setChats] = useState([]);
@@ -1495,7 +1495,7 @@
 //   useEffect(() => {
 //     const fetchChats = async () => {
 //       try {
-//         const response = await axios.get('http://localhost:4000/api/chats/my-chats', {
+//         const response = await axios.get('study-sphere-psi.vercel.app/api/chats/my-chats', {
 //           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //         });
 //         setChats(response.data);
@@ -1509,7 +1509,7 @@
 //   const handleChatSelect = async (chat) => {
 //     setSelectedChat(chat);
 //     try {
-//       const response = await axios.get(`http://localhost:4000/api/chats/${chat._id}/messages`, {
+//       const response = await axios.get(`study-sphere-psi.vercel.app/api/chats/${chat._id}/messages`, {
 //         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //       });
 //       setMessages(response.data);
@@ -1524,7 +1524,7 @@
 //       const newMessage = { content: message, chatId: selectedChat._id };
 
 //       axios
-//         .post('http://localhost:4000/api/messages', newMessage, {
+//         .post('study-sphere-psi.vercel.app/api/messages', newMessage, {
 //           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //         })
 //         .then((response) => {
@@ -1579,7 +1579,7 @@
 //     }
 
 //     try {
-//       const response = await axios.get(`http://localhost:4000/api/users/search?q=${term}`, {
+//       const response = await axios.get(`study-sphere-psi.vercel.app/api/users/search?q=${term}`, {
 //         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
 //       });
 //       setSearchResults(response.data);
@@ -1743,7 +1743,7 @@ import io from 'socket.io-client';
 import axios from 'axios';
 
 // Connect to the backend server
-const socket = io('http://localhost:4000'); // Change to your backend URL
+const socket = io('study-sphere-psi.vercel.app'); // Change to your backend URL
 
 function Chats() {
   const [chats, setChats] = useState([]);
@@ -1760,7 +1760,7 @@ function Chats() {
   useEffect(() => {
     const fetchChats = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/api/chats/my-chats', {
+        const response = await axios.get('study-sphere-psi.vercel.app/api/chats/my-chats', {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
         });
         setChats(response.data);
@@ -1774,7 +1774,7 @@ function Chats() {
   const handleChatSelect = async (chat) => {
     setSelectedChat(chat);
     try {
-      const response = await axios.get(`http://localhost:4000/api/chats/${chat._id}/messages`, {
+      const response = await axios.get(`study-sphere-psi.vercel.app/api/chats/${chat._id}/messages`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
       });
       setMessages(response.data);
@@ -1789,7 +1789,7 @@ function Chats() {
       const newMessage = { content: message, chatId: selectedChat._id };
 
       axios
-        .post('http://localhost:4000/api/messages', newMessage, {
+        .post('study-sphere-psi.vercel.app/api/messages', newMessage, {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
         })
         .then((response) => {
@@ -1837,7 +1837,7 @@ function Chats() {
       };
       
       // Add the file message to the chat like a regular message
-      const messageResponse = await axios.post('http://localhost:4000/api/messages', fileMessage, {
+      const messageResponse = await axios.post('study-sphere-psi.vercel.app/api/messages', fileMessage, {
         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
       });
       
@@ -1861,7 +1861,7 @@ function Chats() {
     }
 
     try {
-      const response = await axios.get(`http://localhost:4000/api/users/search?q=${term}`, {
+      const response = await axios.get(`study-sphere-psi.vercel.app/api/users/search?q=${term}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
       });
       setSearchResults(response.data);
