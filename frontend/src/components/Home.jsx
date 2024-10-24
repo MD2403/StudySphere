@@ -202,7 +202,7 @@
 // export default Home;
 
 
-import React from 'react';
+import { React, useState, useEffect } from 'react';
 import { Grid, Paper, Typography, List, ListItem, ListItemText, ListItemIcon, Avatar, Button, Box, Divider, AppBar, Toolbar } from '@mui/material';
 import { motion } from 'framer-motion';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
@@ -239,7 +239,16 @@ const stats = [
   },
 ];
 
+
 function Home() {
+    const[username,setUsername] = useState('');
+    useEffect(()=>{
+      const user = localStorage.getItem('username');
+      if(user){
+        setUsername(user);
+        }
+    })
+  
   return (
     <Box 
       sx={{
@@ -254,7 +263,7 @@ function Home() {
       <AppBar position="static" color="transparent" elevation={0}>
         <Toolbar>
           <Typography variant="h6" sx={{ flexGrow: 1, color: '#333' }}>
-            Welcome Back, [Your Name]!
+            Welcome Back, {username}!
           </Typography>
           <Button 
             variant="contained" 

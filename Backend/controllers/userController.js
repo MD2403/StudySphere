@@ -87,7 +87,7 @@ export const login = asyncHandler( async(req,res,next)=>{
             httpOnly: true,
             secure: process.env.NODE_ENV === 'production'? true : false
         }
-        return res.status(200).cookie("accessToken",accessToken,option).cookie("refreshToken",refreshToken,option).json(new ApiResponse(200,{user, accessToken, refreshToken},"User logegd in successfully"));
+        return res.status(200).cookie("accessToken",accessToken,option).cookie("refreshToken", refreshToken, option).json(new ApiResponse(200,{user, accessToken, refreshToken},"User logegd in successfully"));
     } catch (error) {
         next(error)
     }

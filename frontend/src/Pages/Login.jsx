@@ -16,13 +16,14 @@ const Login = () => {
                 { withCredentials: true }); // Make sure to include withCredentials
     
             if (response.status === 200) {
-                const {  accessToken, refreshToken } = response.data.data; 
+                const {  accessToken, refreshToken, user } = response.data.data; 
                 console.log(`id : ${response.data.data.user._id} \n\n,${accessToken}\n\n,${refreshToken}`)
 
                 // Store tokens and user data in local storage
                 localStorage.setItem('accessToken', accessToken); // Adjust according to your API response structure
                 localStorage.setItem('currentUser', JSON.stringify(response.data.data.user._id)); // Store _id as currentUser
                 localStorage.setItem('refreshToken', refreshToken);
+                localStorage.setItem('username',user.username)
     
                 navigate('/home'); // Redirect to home
             }
